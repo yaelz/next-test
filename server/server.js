@@ -1,12 +1,12 @@
 'use strict';
 const express = require('express');
-const path = require('path');
+// const path = require('path');
 const logger = require('morgan');
 const movies = require('./movies.json');
 
 const app = express();
 app.use(logger('dev'));
-app.use(express.static(path.join(__dirname, 'dist')));
+// app.use(express.static(path.join(__dirname, 'dist'))); // TODO is this best practice?
 
 app.get('/movies', (req, res) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -20,6 +20,10 @@ app.get('/movies/:id', (req, res) => {
 
 app.listen(3000, function () {
     console.log(`app listening on port ${3000}!`);
+});
+
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
 });
 
 module.exports = app;
