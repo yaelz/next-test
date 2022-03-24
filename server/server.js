@@ -10,7 +10,7 @@ app.use(express.static('dist'));
 
 app.get('/movies', (req, res) => {
     res.header('Access-Control-Allow-Origin', '*');
-    res.send(movies);
+    res.send(JSON.stringify(movies));
 });
 
 app.get('/movies/:id', (req, res) => {
