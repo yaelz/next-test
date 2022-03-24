@@ -24,7 +24,5 @@ module.exports = {
         path: path.resolve(__dirname, "dist/"),
         filename: "bundle.js"
     },
-    plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin({
-        title: 'Output Management',
-    }),]
+    plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin({template: "public/index.html"}),]
 };

@@ -1,7 +1,7 @@
 {
   "name": "next-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Installation 1. Download the repository 2. Install npm modules: `npm install` 2. Build Babel & Webpack: `npm run build` 4. Start up the server: `npm start`",
   "scripts": {
     "start": "node server/server.js",
     "build": "webpack"
@@ -22,7 +22,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
