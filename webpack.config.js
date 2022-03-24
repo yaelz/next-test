@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 module.exports = {
-    entry: "./src/index.js",
+    entry: "./public/like_button.js",
     mode: "development",
     module: {
         rules: [
