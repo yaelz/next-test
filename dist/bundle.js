@@ -64,7 +64,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "afaf1cf957416f84cefc";
+/******/ 	var hotCurrentHash = "86c72fcc74a9f348b95a";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -789,7 +789,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire("./public/like_button.js")(__webpack_require__.s = "./public/like_button.js");
+/******/ 	return hotCreateRequire("./public/app.js")(__webpack_require__.s = "./public/app.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -902,15 +902,15 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
-/***/ "./public/like_button.js":
-/*!*******************************!*\
-  !*** ./public/like_button.js ***!
-  \*******************************/
+/***/ "./public/app.js":
+/*!***********************!*\
+  !*** ./public/app.js ***!
+  \***********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar e = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\nvar LikeButton = function LikeButton() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n    onClick: function onClick() {\n      return console.log('AAAAAAAAA Cant believe ittttttt');\n    }\n  }, \"Like\");\n};\n\nvar domContainer = document.querySelector('#like_button_container');\nconsole.log('888888888888');\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(e(LikeButton), domContainer);\nalert('YAELLLL');\n\n//# sourceURL=webpack:///./public/like_button.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar e = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;\n\nvar LikeButton = function LikeButton() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n    onClick: function onClick() {\n      return console.log('YASSSSSSssssddddereee');\n    }\n  }, \"Like\");\n};\n\nvar domContainer = document.querySelector('#my_app_container');\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(e(LikeButton), domContainer);\n\n//# sourceURL=webpack:///./public/app.js?");
 
 /***/ })
 

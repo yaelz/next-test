@@ -22,8 +22,8 @@ app.listen(3000, function () {
     console.log(`app listening on port ${3000}!`);
 });
 
-app.get('/public/like_button.js', function(req, res) {
-    res.sendfile('public/like_button.js');
+app.get('/public/app.js', function(req, res) {
+    res.sendfile('public/app.js');
 });
 
 app.get("/", (req, res) => {

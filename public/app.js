@@ -5,13 +5,11 @@ const e = React.createElement;
 
 const LikeButton = () => {
     return (
-        <button onClick={() => console.log('YASSSSSS')}>
+        <button onClick={() => console.log('YASSSSSSssssddddereee')}>
             Like
         </button>
     );
 }
 
-const domContainer = document.querySelector('#like_button_container');
+const domContainer = document.querySelector('#my_app_container');
 ReactDOM.render(e(LikeButton), domContainer);
-
-alert('YAELLLL')
