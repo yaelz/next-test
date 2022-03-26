@@ -13,7 +13,7 @@ const MovieEntry = ({movie}) => {
 
     return (
         <>
-            <MovieModal modalIsOpen={modalIsOpen} closeModal={closeModal}/>
+            <MovieModal movie={movie} modalIsOpen={modalIsOpen} closeModal={() => closeModal()}/>
             <div style={{width: '200px', paddingRight: '15px', margin: 'auto', textAlign: 'center', verticalAlign: 'center'}}>
                 <img src={movie.image}/>
                 <div style={{font: 'normal normal normal 24px/30px Georgia', textTransform: 'titlecase', textAlign: 'start'}} key={`title${movie.id}`}>{`${movie.title} (${movie.released})`}</div>

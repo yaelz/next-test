@@ -18,10 +18,17 @@
 4. back button
 5. search
 
+AT LEAST ONE TEST!!!
+
+### ntw
+
+Don't forget the modal background
+Styling
 
 #### SEO
 #### a11y
 #### mobile breakpoint
+### Route to specific movie opened
 
 #### HMR
 #### Lint
