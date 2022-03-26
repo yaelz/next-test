@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom'
-import axios from 'axios';
-import MovieEntry from "./MovieEntry";
 import MoviesContainer from "./MoviesContainer";
-// import styles from './styles.css';
 
 const e = React.createElement;
 
