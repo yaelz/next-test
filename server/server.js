@@ -22,10 +22,6 @@ app.listen(3000, function () {
     console.log(`app listening on port ${3000}!`);
 });
 
-app.get('/public/app.js', function(req, res) {
-    res.sendfile('public/app.js');
-});
-
 app.get("/", (req, res) => {
     res.sendFile("/index.html");
 });
