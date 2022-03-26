@@ -25,7 +25,7 @@ V AT LEAST ONE TEST!!!
 ### Movie modal, not good that it's on each one of the entries
 ### Route to specific movie opened, get by id
 
-### ntw
+### nth
 Modal background
 Styling in css
 Styling better :(
