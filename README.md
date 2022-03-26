@@ -12,20 +12,21 @@
 ## TODO
 ### Must !!!
 1. star
-   1. load pngs
+   1. load pngs V
 2. read more button V
 3. modal V
 4. back button V
 5. search V
 
 V AT LEAST ONE TEST!!!
+test loading on of the components
 
 ### optimizations
+### Movie modal, not good that it's on each one of the entries
 ### Route to specific movie opened, get by id
 
 ### ntw
-
-Don't forget the modal background
+Modal background
 Styling
 
 #### SEO
@@ -41,4 +42,4 @@ Styling
 ## Qs
 1. What happens when the movie title is long?
 2. Some don't have stars
-3. What should I have used instead of react-modal?
+3. react-modal, any other best practice?
