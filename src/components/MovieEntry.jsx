@@ -15,10 +15,10 @@ const MovieEntry = ({movie}) => {
     return (
         <>
             <MovieModal movie={movie} modalIsOpen={modalIsOpen} closeModal={() => closeModal()}/>
-            <div style={{width: '200px', paddingRight: '15px', margin: 'auto', textAlign: 'center', verticalAlign: 'center'}}>
+            <div style={{width: '200px', paddingBottom: '94px', paddingRight: '15px', margin: 'auto', textAlign: 'center', verticalAlign: 'center'}}>
                 <img src={movie.image}/>
-                <div style={{font: 'normal normal normal 24px/30px Georgia', textTransform: 'titlecase', textAlign: 'start'}} key={`title${movie.id}`}>{`${movie.title} (${movie.released})`}</div>
-                <div style={{display: 'flex', flexDirection: 'row'}}>
+                <div style={{font: 'normal normal normal 24px/30px Georgia', textTransform: 'titlecase', textAlign: 'start', height: '60px', overflow: 'scroll'}} key={`title${movie.id}`}>{`${movie.title} (${movie.released})`}</div>
+                <div style={{display: 'flex', flexDirection: 'row', paddingTop: '20px'}}>
                     <img style={{height: '24px', paddingRight: '6px'}} src={star} />
                     <div style={{font: 'normal normal normal 24px/30px Arial', textAlign: 'start'}}>{`${movie.rating}`}</div>
                 </div>
