@@ -13,12 +13,12 @@
 ### Must !!!
 1. star
    1. load pngs
-2. read more button
-3. modal
-4. back button
+2. read more button V
+3. modal V
+4. back button V
 5. search
 
-AT LEAST ONE TEST!!!
+V AT LEAST ONE TEST!!!
 
 ### ntw
 

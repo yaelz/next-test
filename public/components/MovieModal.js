@@ -28,9 +28,9 @@ const MovieModal = ({movie, modalIsOpen, closeModal}) => {
                 <img style={{width: '400px', height: '600px'}} src={movie.image}/>
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', paddingLeft: '140px', width: '400px'}}>
                     <div style={{display: 'flex', flexDirection: 'column'}}>
-                        <div style={{font: 'normal normal bold 36px/42px Arial', textTransform: 'uppercase', width: '300px'}}>{movie.title}</div>
-                        <div style={{font: 'normal normal normal 24px/30px Georgia'}}>{logic.parseRuntime(movie.runtime)}</div>
-                        <div style={{font: 'normal normal normal 24px/30px Georgia'}}>{`${movie.rating}/10`}</div>
+                        <div style={{font: 'normal normal bold 36px/42px Arial', textTransform: 'uppercase', width: '300px', paddingBottom: '10px'}}>{movie.title}</div>
+                        <div style={{font: 'normal normal normal 24px/30px Georgia', paddingBottom: '24px'}}>{logic.parseRuntime(movie.runtime)}</div>
+                        <div style={{font: 'normal normal normal 24px/30px Georgia', paddingBottom: '28px'}}>{`${movie.rating}/10`}</div>
                         <div style={{font: 'normal normal normal 24px/30px Georgia', width: '300px'}} dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(movie.synopsis)}}></div>
                     </div>
                     <div>
