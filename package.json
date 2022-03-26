@@ -4,7 +4,8 @@
   "description": "## Installation 1. Download the repository 2. Install npm modules: `npm install` 2. Build Babel & Webpack: `npm run build` 4. Start up the server: `npm start`",
   "scripts": {
     "start": "node server/server.js",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.1",
     "html-webpack-plugin": "^4.0.0",
+    "jest": "^27.5.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.1",

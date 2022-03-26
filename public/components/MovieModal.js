@@ -1,6 +1,7 @@
 import React from "react";
 import Modal from "react-modal";
 import DOMPurify from 'dompurify';
+import logic from '../logic/logic'
 
 Modal.setAppElement('#my_app_container');
 
@@ -28,7 +29,7 @@ const MovieModal = ({movie, modalIsOpen, closeModal}) => {
                 <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', paddingLeft: '140px', width: '400px'}}>
                     <div style={{display: 'flex', flexDirection: 'column'}}>
                         <div style={{font: 'normal normal bold 36px/42px Arial', textTransform: 'uppercase', width: '300px'}}>{movie.title}</div>
-                        <div style={{font: 'normal normal normal 24px/30px Georgia'}}>{movie.runtime}</div>
+                        <div style={{font: 'normal normal normal 24px/30px Georgia'}}>{logic.parseRuntime(movie.runtime)}</div>
                         <div style={{font: 'normal normal normal 24px/30px Georgia'}}>{`${movie.rating}/10`}</div>
                         <div style={{font: 'normal normal normal 24px/30px Georgia', width: '300px'}} dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(movie.synopsis)}}></div>
                     </div>
