@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: ["@babel/polyfill", "./public/components/app.jsx"],
+    entry: ["@babel/polyfill", "./src/components/app.jsx"],
     mode: "development",
     module: {
         rules: [
@@ -21,8 +21,8 @@ module.exports = {
     },
     resolve: { extensions: ["*", ".js", ".jsx"] },
     output: {
-        path: path.resolve(__dirname, "dist/"),
+        path: path.resolve(__dirname, "public/"),
         filename: "bundle.js"
     },
-    plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin({template: "public/index.html"}),]
+    plugins: [new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin({template: "src/index.html"}),]
 };

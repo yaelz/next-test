@@ -6,7 +6,7 @@ const movies = require('./movies.json');
 
 const app = express();
 app.use(logger('dev'));
-app.use(express.static('dist'));
+app.use(express.static('public'));
 
 app.get('/movies', (req, res) => {
     res.header('Access-Control-Allow-Origin', '*');
