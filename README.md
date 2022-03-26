@@ -19,7 +19,7 @@
 5. search V
 
 V AT LEAST ONE TEST!!!
-test loading on of the components
+? test loading on of the components
 
 ### optimizations
 ### Movie modal, not good that it's on each one of the entries
@@ -27,7 +27,8 @@ test loading on of the components
 
 ### ntw
 Modal background
-Styling
+Styling in css
+Styling better :(
 
 #### SEO
 #### a11y

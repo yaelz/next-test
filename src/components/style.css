@@ -1,0 +1,11 @@
+.app-title {
+    font: normal normal bold 80px/66px Arial;
+    textAlign: center;
+    textTransform: uppercase;
+    fontSize: 50px;
+    width: 600px;
+    margin: auto;
+    paddingTop: 114px;
+    paddingBottom: 95px;
+    lineHeight: 46px;
+}
