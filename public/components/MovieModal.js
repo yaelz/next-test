@@ -16,9 +16,6 @@ const customStyles = {
 };
 
 const MovieModal = ({movie, modalIsOpen, closeModal}) => {
-
-    console.log('******* movie.synopsis: ', movie.synopsis)
-    console.log('******* `${movie.synopsis}`: ', `${movie.synopsis}`)
     return (
         <Modal
             isOpen={modalIsOpen}
