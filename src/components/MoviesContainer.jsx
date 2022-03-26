@@ -18,14 +18,22 @@ const MoviesContainer = () => {
             .catch(console.error);
     }, [])
 
+    function resetAllInputs() {
+        setMovieIdSearch('')
+        setMovieTitleSearch('')
+        setMovieYearSearch('')
+    }
+
     const searchByMovieId = async () => {
         const response = await axios.get(`/movies/${movieIdSearch}`);
         setMovies(response.data);
+        resetAllInputs();
     }
 
     const reset = async () => {
         const response = await axios.get(`/movies`);
         setMovies(response.data);
+        resetAllInputs();
     }
 
     const searchByTitle = async e => {
@@ -33,12 +41,14 @@ const MoviesContainer = () => {
         console.log('********* e: ', whyIsThisTheValue);
         const response = await axios.get(`/movies/title/${whyIsThisTheValue}`);
         setMovies(response.data);
+        resetAllInputs();
     }
 
     const searchByYear = async e => {
         const released = e.target[0].value
         const response = await axios.get(`/movies/released/${released}`);
         setMovies(response.data);
+        resetAllInputs();
     }
 
     return (
