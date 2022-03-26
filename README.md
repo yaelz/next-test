@@ -20,6 +20,9 @@
 
 V AT LEAST ONE TEST!!!
 
+### optimizations
+### Route to specific movie opened, get by id
+
 ### ntw
 
 Don't forget the modal background
@@ -28,9 +31,9 @@ Styling
 #### SEO
 #### a11y
 #### mobile breakpoint
-### Route to specific movie opened
 
 #### HMR
+#### Source maps
 #### Lint
 #### load from css file (scss??)
 #### ts

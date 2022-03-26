@@ -18,6 +18,16 @@ app.get('/movies/:id', (req, res) => {
     res.send(movies.filter(movie => movie.id === req.params.id));
 });
 
+app.get('/movies/title/:title', (req, res) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.send(movies.filter(movie => {
+            const titleParamLowercase = req.params.title.toLocaleLowerCase();
+            const currentTitleLowercase = movie.title.toLocaleLowerCase();
+            return currentTitleLowercase.includes(titleParamLowercase)
+        }
+    ));
+});
+
 app.listen(3000, function () {
     console.log(`app listening on port ${3000}!`);
 });
