@@ -22,7 +22,7 @@ const MovieEntry = ({movie}) => {
                     <img style={{height: '24px', paddingRight: '6px'}} src={star} />
                     <div style={{font: 'normal normal normal 24px/30px Arial', textAlign: 'start'}}>{`${movie.rating}`}</div>
                 </div>
-                <button style={{border: '1px solid #000000', borderRadius: '100px', opacity: 1, font: 'normal normal normal 16px/20px Georgia', width: '100%', marginTop: '19px', backgroundColor: 'transparent', textAlign: 'left', padding: '6px 12px'}} onClick={openModal}>
+                <button data-hook={`movie-entry-read-more-${movie.id}`} style={{border: '1px solid #000000', borderRadius: '100px', opacity: 1, font: 'normal normal normal 16px/20px Georgia', width: '100%', marginTop: '19px', backgroundColor: 'transparent', textAlign: 'left', padding: '6px 12px'}} onClick={openModal}>
                     Read more
                 </button>
             </div>

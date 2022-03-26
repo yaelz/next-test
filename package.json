@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node server/server.js",
     "build": "webpack",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.0.0",
+    "@testing-library/react": "^12.1.4",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.1",
     "file-loader": "^6.2.0",
