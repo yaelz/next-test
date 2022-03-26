@@ -8,3 +8,17 @@
 ## Usage
 1. Get all movies: http://localhost:3000/movies
 2. get one movie by id: http://localhost:3000/movies/:id (e.g., http://localhost:3000/movies/60027713)
+
+## TODO
+### Must !!!
+1. star
+2. read more button
+3. modal
+4. back button
+5. search
+
+
+#### mobile breakpoint
+#### HMR
+#### Lint
+#### load from css file (scss??)
