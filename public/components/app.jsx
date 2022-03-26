@@ -21,7 +21,7 @@ const App = () => {
 
     return (
         <div style={{backgroundColor: "#00D7FF", display: 'flex', flexDirection: 'column' }}>
-            <div style={{font: 'normal normal bold 80px/66px Arial', textAlign: 'center', textTransform: 'uppercase', fontSize: '50px', width: '600px', margin: 'auto'}}>Explore your next Movies and TV shows</div>
+            <div style={{font: 'normal normal bold 80px/66px Arial', textAlign: 'center', textTransform: 'uppercase', fontSize: '50px', width: '600px', margin: 'auto', paddingTop: '114px', paddingBottom: '95px'}}>Explore your next Movies and TV shows</div>
             <div style={{display: 'flex', flexWrap: 'wrap'}}>
                 {movies && movies.map((movie) => (
                     <MovieEntry key={movie.id} movie={movie}/>

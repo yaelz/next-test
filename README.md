@@ -13,7 +13,6 @@
 ### Must !!!
 1. star
    1. load pngs
-   2. the star number
 2. read more button
 3. modal
 4. back button
@@ -27,4 +26,5 @@
 #### ts
 
 ## Qs
-1. what happens when the movie title is long?
+1. What happens when the movie title is long?
+2. Some don't have stars

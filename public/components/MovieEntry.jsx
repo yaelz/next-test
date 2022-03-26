@@ -2,9 +2,10 @@ import React from "react";
 
 const MovieEntry = ({movie}) => {
     return (
-        <div style={{maxWidth: '200px', padding: '15px', margin: 'auto', textAlign: 'center', verticalAlign: 'center'}}>
+        <div style={{maxWidth: '200px', paddingRight: '15px', margin: 'auto', textAlign: 'center', verticalAlign: 'center'}}>
             <img src={movie.image}/>
-            <div style={{font: 'normal normal normal 30px/31px Georgia', textTransform: 'titlecase'}} key={`title${movie.id}`}>{movie.title}</div>
+            <div style={{font: 'normal normal normal 24px/30px Georgia', textTransform: 'titlecase', textAlign: 'start'}} key={`title${movie.id}`}>{`${movie.title} (${movie.released})`}</div>
+            <div style={{font: 'normal normal normal 24px/30px Arial', textAlign: 'start'}}>{`${movie.rating}`}</div>
         </div>
     )
 }
