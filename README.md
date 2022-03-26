@@ -19,7 +19,10 @@
 5. search
 
 
+#### SEO
+#### a11y
 #### mobile breakpoint
+
 #### HMR
 #### Lint
 #### load from css file (scss??)
@@ -28,3 +31,4 @@
 ## Qs
 1. What happens when the movie title is long?
 2. Some don't have stars
+3. What should I have used instead of react-modal?
