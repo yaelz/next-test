@@ -28,6 +28,19 @@ app.get('/movies/title/:title', (req, res) => {
     ));
 });
 
+app.get('/movies/released/:released', (req, res) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    console.log('******* released: ', req.params.released);
+    res.send(movies.filter(movie => {
+        console.log('******* movie.released: ', movie.released);
+        console.log('******* movie.released type: ', typeof movie.released);
+        console.log('******* req.params.released: ', req.params.released);
+        console.log('******* req.params.released type: ', typeof req.params.released);
+        console.log('******* equal??? ', movie.released === req.params.released);
+        return movie.released === req.params.released
+    }));
+});
+
 app.listen(3000, function () {
     console.log(`app listening on port ${3000}!`);
 });

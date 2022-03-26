@@ -4,13 +4,13 @@ import AllMovies from "./AllMovies";
 
 const MoviesContainer = () => {
     const [movies, setMovies] = useState([]);
-    const [movieIdSearch, setMovieIdSearch] = useState('aaa');
-    const [movieTitleSearch, setMovieTitleSearch] = useState('aaa');
+    const [movieIdSearch, setMovieIdSearch] = useState('');
+    const [movieTitleSearch, setMovieTitleSearch] = useState('');
+    const [movieYearSearch, setMovieYearSearch] = useState('');
 
     useEffect(() => {
         const fetchData = async () => {
             const response = await axios.get('/movies');
-            console.log('YAEL NO THIS IS HAPPENING MORE THAN ONCE')
             setMovies(response.data);
         }
 
@@ -19,25 +19,22 @@ const MoviesContainer = () => {
     }, [])
 
     const searchByMovieId = async () => {
-        console.log('************** movieIdSearch: ', movieIdSearch)
         const response = await axios.get(`/movies/${movieIdSearch}`);
-        console.log('********* response.data: ', response.data);
         setMovies(response.data);
     }
 
     const searchByTitle = async e => {
-        const whyIsThisTheValue = e.target[0].value;
+        const whyIsThisTheValue = e.target[0].value; // This is the value, why?? Should use forms in a better way
         console.log('********* e: ', whyIsThisTheValue);
         const response = await axios.get(`/movies/title/${whyIsThisTheValue}`);
-        console.log('********* response.data: ', response.data);
         setMovies(response.data);
     }
 
-    // const searchByYear = async word => {
-    //     const response = await axios.get(`/movies/${movieId}`);
-    //     console.log('********* response.data: ', response.data);
-    //     setMovies(response.data);
-    // }
+    const searchByYear = async e => {
+        const released = e.target[0].value
+        const response = await axios.get(`/movies/released/${released}`);
+        setMovies(response.data);
+    }
 
     return (
         <>
@@ -49,7 +46,7 @@ const MoviesContainer = () => {
                         setMovieIdSearch(e.target.value)
                     }} />
                 </label>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Go!" />
             </form>
             <form onSubmit={e => {e.preventDefault(); searchByTitle(e)}}>
                 <label>
@@ -59,7 +56,17 @@ const MoviesContainer = () => {
                         setMovieTitleSearch(e.target.value)
                     }} />
                 </label>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Go!" />
+            </form>
+            <form onSubmit={e => {e.preventDefault(); searchByYear(e)}}>
+                <label>
+                    Search By Year:
+                    <input type="text" value={movieYearSearch} onChange={(e) => {
+                        e.preventDefault();
+                        setMovieYearSearch(e.target.value)
+                    }} />
+                </label>
+                <input type="submit" value="Go!" />
             </form>
             <AllMovies movies={movies}></AllMovies>
         </>
