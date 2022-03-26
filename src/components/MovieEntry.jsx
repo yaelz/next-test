@@ -1,7 +1,6 @@
 import React from "react";
 import MovieModal from "./MovieModal";
 import star from '../assets/star@2x.png';
-import arrow from '../assets/arrow@2x.png';
 
 const MovieEntry = ({movie}) => {
     const [modalIsOpen, setIsOpen] = React.useState(false);
